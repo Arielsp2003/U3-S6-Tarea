@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Formulario con Bootstrap Grid</h1>
+        
+        <form id="miFormulario">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@dominio.com">
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="fecha" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="fecha">
+                </div>
+                <div class="col-md-4">
+                    <label for="edad" class="form-label">Edad</label>
+                    <input type="number" class="form-control" id="edad" min="1" max="120">
+                </div>
+                <div class="col-md-4">
+                    <label for="pais" class="form-label">País</label>
+                    <select class="form-select" id="pais">
+                        <option selected>Seleccione un país</option>
+                        <option value="1">México</option>
+                        <option value="2">España</option>
+                        <option value="3">Colombia</option>
+                        <option value="4">Ecuador</option>
+                        <option value="5">Argentina</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Género</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino">
+                        <label class="form-check-label" for="masculino">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="femenino" value="femenino">
+                        <label class="form-check-label" for="femenino">
+                            Femenino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="binario" value="binario">
+                        <label class="form-check-label" for="binario">
+                            No binario
+                        </label>
+                    </div>
+                    <!-- Los siguientes generos son una broma y no se deben tomar enserio -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="helicoptero apache" value="helicoptero apache">
+                        <label class="form-check-label" for="helicoptero apache">
+                            Helicoptero Apache
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="terreneitor" value="terreneitor">
+                        <label class="form-check-label" for="terreneitor">
+                            Terreneitor
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <label class="form-label">Intereses</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="deportes">
+                        <label class="form-check-label" for="deportes">
+                            Deportes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="musica">
+                        <label class="form-check-label" for="musica">
+                            Música
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="lectura">
+                        <label class="form-check-label" for="lectura">
+                            Lectura
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tecnologia">
+                        <label class="form-check-label" for="tecnologia">
+                            Tecnología
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="videojuegos">
+                        <label class="form-check-label" for="videojuegos">
+                            Videojuegos
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe tus comentarios aquí..."></textarea>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h5>Lista de requisitos:</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Todos los campos son obligatorios</li>
+                        <li class="list-group-item">El correo debe ser válido</li>
+                        <li class="list-group-item">La edad debe estar entre 1 y 120 años</li>
+                        <li class="list-group-item">Seleccione al menos un interés</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6 mb-2">
+                    <button type="submit" class="btn btn-primary w-100">Enviar formulario</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="reset" class="btn btn-secondary w-100">Limpiar formulario</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
