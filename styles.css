@@ -1,3 +1,4 @@
+
 :root {
   --bg-primary: #0a192f;
   --bg-secondary: #172a45;
@@ -7,7 +8,7 @@
   --border-color: #303f60;
   --hover-blue: #1e90ff;
 }
-
+/* Estilos base para el cuerpo del documento */
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -15,7 +16,7 @@ body {
   line-height: 1.6;
 }
 
-
+/* Estilo para el contenido principal */
 .container {
   max-width: 800px;
   background-color: var(--bg-secondary);
@@ -25,16 +26,16 @@ body {
   border: 1px solid var(--border-color);
 }
 
+/* Estilos para los encabezados */
 h1, h2, h3, h4, h5, h6 {
   color: var(--accent-blue);
   font-weight: 600;
 }
 
-
+/* Estilos para los formularios */
 .form-group {
   margin-bottom: 1.5rem;
 }
-
 
 .form-label {
   font-weight: 500;
@@ -48,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
 }
 
+/*  Estilos para los botones  */
 .form-control:focus {
   border-color: var(--hover-blue);
   box-shadow: 0 0 0 0.25rem rgba(30, 144, 255, 0.25);
@@ -84,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
 }
 
-
+/* Estilos para las listas */
 .list-group {
   border-radius: 5px;
   background-color: var(--bg-primary);
@@ -102,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(5px);
 }
 
-
+/* Estilos para checkboxes y radio buttons  */
 .form-check-input {
   background-color: var(--bg-primary);
   border: 1px solid var(--border-color);
@@ -134,7 +136,7 @@ textarea.form-control {
   border: 1px solid var(--border-color);
 }
 
-
+/*  Personalización de la barra de scroll */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -152,6 +154,8 @@ textarea.form-control {
   background: #1a7cd9;
 }
 
+/* 
+  Estilos adicionales para los controles del formulario */
 .form-control, 
 .form-select, 
 .form-control::placeholder,
@@ -170,13 +174,14 @@ textarea.form-control {
   opacity: 1; 
 }
 
+/*  Estilos para controles deshabilitados */
 
 .form-control:disabled {
   background-color: #172a45;
   color: #8892b0;
 }
 
-
+/* Estilo especial para los inputs de fecha en modo oscuro */
 input[type="date"] {
   color-scheme: dark; 
 }

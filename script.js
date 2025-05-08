@@ -32,6 +32,7 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
     alert('Formulario enviado correctamente');
 });
 
+// Efectos visuales para los campos de entrada
 const inputs = document.querySelectorAll('.form-control');
 inputs.forEach(input => {
     input.addEventListener('mouseenter', function() {
@@ -43,6 +44,7 @@ inputs.forEach(input => {
     });
 });
 
+// Efectos visuales para los botones
 const botones = document.querySelectorAll('.btn');
 botones.forEach(boton => {
     boton.addEventListener('mouseenter', function() {
